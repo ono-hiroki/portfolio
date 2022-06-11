@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ono-hiroki.github.io/ono-hiroki.github.io",
+  "homepage": "https://ono-hiroki.github.io/portfolio",
   "simple-git-hooks": {
     "pre-commit": "npm run lint"
   },
