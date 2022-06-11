@@ -21,10 +21,8 @@ const Home: NextPage = () => {
     rootMargin: '-100px',
     triggerOnce: true
   })
-  const [refWorksMyNote, inViewWorksMyNote] = useInView({
-    rootMargin: '-100px',
-    triggerOnce: true
-  })
+
+
   const particlesInit = async (main: Engine) => {
     await loadFull(main)
   }
@@ -45,7 +43,7 @@ const Home: NextPage = () => {
             lineClassName=""
             lines={[
               { type: 'cmd', text: 'pwd' },
-              { type: 'res', text: "おおのひろき" },
+              { type: 'res', text: 'おおのひろき' },
               { type: 'cmd', text: 'ls' },
               {
                 type: 'res',
@@ -71,9 +69,7 @@ const Home: NextPage = () => {
               {inViewAboutMe && (
                 <div className="animate__animated animate__fadeInUp w-full grid md:grid-cols-2">
                   <div className="my-auto">
-                    <p>
-                      芝浦工業大学数理科学科、現在学部3年。
-                    </p>
+                    <p>芝浦工業大学数理科学科、現在学部3年。</p>
                     <a
                       href="https://github.com/ono-hiroki"
                       target="_blank"
